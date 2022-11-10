@@ -3,7 +3,9 @@
 	import 'bytemd/dist/index.css';
 
 	let editorContent = '# Hello';
-
+	const handleChange = (event) => {
+		editorContent = event.detail.value;
+	};
 </script>
 
 <h1>Welcome to SvelteKit</h1>
@@ -16,12 +18,12 @@
 
 <p>ByteMD editor component:</p>
 <div class="box">
-	<Editor bind:value={editorContent} />
+	<Editor bind:value={editorContent} on:change={handleChange} />
 </div>
 
 <style>
-	.box{
-		border:1px solid #555;
+	.box {
+		border: 1px solid #555;
 		padding: 2rem;
 	}
 </style>
