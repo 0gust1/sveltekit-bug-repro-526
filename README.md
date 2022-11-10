@@ -2,10 +2,10 @@
 
 Reproduction repo for https://github.com/sveltejs/kit/pull/7388#issuecomment-1308801352
 
-**On master:**  
+**On main:**  
 sveltekit v526 + byteMD + ssr=false => **NOK**, dev mode breaks the app
 
-`git checkout master && npm ci && npm run dev -- --force`
+`git checkout main && npm ci && npm run dev -- --force`
 
 **On feat/v525:**  
 sveltekit v525 + byteMD + ssr=false => **OK**, app works
